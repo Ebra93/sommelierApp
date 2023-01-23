@@ -1,0 +1,57 @@
+input[type="range"] {
+    width: 100%;
+}
+
+#filter {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 33% 33% 33%;
+}
+
+#produkt {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#art {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#AlkoholgehaltSlider {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#herkunft {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#inhaltsstoffe {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#bewertung {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#bewertungStars {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+}
+.filterStars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    font-size: var(--star-size);
+}
+.filterStars::before {
+    content: '★';
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#star {
+}

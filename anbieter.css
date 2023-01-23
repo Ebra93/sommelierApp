@@ -1,0 +1,192 @@
+    #anbieterTitle{
+        text-align: center;
+        border-bottom: solid black;
+        border-top: solid black;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-family: Calibri, serif;
+    }
+    .anbieter1 {
+        width: 60%;
+        float: right;
+    }
+    #anbieterSpeichern{
+        float: left;
+        width: 15%;
+    }
+    #anbieterAbbrechen{
+        float: right;
+        width: 15%;
+    }
+    #anbieterBeschreibung{
+        line-height: 4em;
+    }
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .grid-container3 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .grid-item {
+        font-size: 20px;
+        text-align: center;
+    }
+    .image-upload>input {
+        display: none;
+    }
+    .karte_hinzufugen{
+        text-align: center;
+
+    }
+    #karte{
+        display:inline-block;
+        margin:20px;
+        text-decoration:none;
+        font-family:Arial;
+        font-size:200%;
+        border:2px solid;
+        border-radius:50%;
+        background-color: #AAAAAA;
+        width:60px;
+        height:60px;
+        text-align:center;
+        vertical-align:middle;
+        padding-top:10px;
+        overflow:hidden;
+        font-weight:bold;
+
+    }
+    /* Bewertung popup */
+    .kartepopup{
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+
+    /* Add Zoom Animation */
+    .animation {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+    /* Add Zoom Animation */
+    .animate{
+        -webkit-animation:  animatezoom 0.6s;
+        animation: animatezoom 0.6s;
+    }
+    @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)}
+        to {-webkit-transform: scale(1)}
+    }
+    @keyframes animatezoom {
+        from {transform: scale(0)}
+        to {transform: scale(1)}
+    }
+    .f{
+        width: 100%;
+        margin-left: 15%;
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+    span.left{
+        margin-left: 10%;
+    }
+    span.right{
+        margin-left: 30%;
+    }
+    hr{
+    }
+    #farbe {
+        color: lawngreen;
+    }
+
+    .getraenk_liste{
+        text-align: center;
+        border-bottom: solid black 1px;
+    }
+
+
+    @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)}
+        to {-webkit-transform: scale(1)}
+    }
+
+    @keyframes animatezoom {
+        from {transform: scale(0)}
+        to {transform: scale(1)}
+    }
+    @media only screen and (max-width:1080px) {
+        #anbieterTitle{
+            font-size: 55px;
+        }
+        #anbieterSpeichern{
+            height:80px;
+            width:300px;
+            font-size: 25px;
+            border: solid black 2px;
+        }
+        #anbieterAbbrechen{
+            height:80px;
+            width:300px;
+            font-size: 25px;
+            border: solid black 2px;
+        }
+        #anbieterAbbrechen{
+            height:80px;
+            width:300px;
+            font-size: 25px;
+            border: solid black 2px;
+        }
+        #anbieterText{
+            font-size: 30px;
+        }
+        #anbieterText2{
+            font-size: 30px;
+        }
+        .grid-item{
+            display: block;
+            padding: 10px;
+            text-align: justify;
+            margin-top: 20px;
+        }
+        .getraenk_liste{
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+        input[type=checkbox]
+        {
+            /* Double-sized Checkboxes */
+            -ms-transform: scale(2); /* IE */
+            -moz-transform: scale(2); /* FF */
+            -webkit-transform: scale(2); /* Safari and Chrome */
+            -o-transform: scale(2); /* Opera */
+            transform: scale(2);
+        }
+        #getraenk_h1{
+            font-size: 80px;
+            text-align: center;
+        }
+        span.left{
+            margin-left: 1%;
+        }
+        span.right{
+            margin-left: 25%;
+        }
+        input[type="text"] > #suchen{
+            width: 90%;
+        }
+    }

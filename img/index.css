@@ -1,0 +1,124 @@
+body {
+    background-image: url('/img/hintergrund.jpg');
+    background-color: white;
+    background-size: 40%;
+    background-position: left;
+    background-position-y: 80px;
+    background-repeat: no-repeat;
+}
+.logo {
+    width: 100px;
+    float: right;
+}
+.benutzerbild{
+    height: 80px;
+    width: 90px;
+}
+.starttext{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 3em;
+    color: orange;
+}
+.starttextklein{
+    text-align: center;
+    color: darkorange;
+}
+.suchleiste{
+    width: 100%;
+    text-align:center;
+
+}
+#suchanfrage{
+    width: 600px;
+    height: 30px;
+}
+.buttons{
+    height: 30px;
+}
+.suchfeld{
+    margin-left: 550px;
+    margin-top: 100px;
+}
+#suchetext{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+.container{
+    padding: 16px;
+}
+input[type=text],input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button{
+    background-color: orange;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover{
+    opacity: 0.8;
+}
+
+.login-popup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 80px;
+}
+
+.login-form{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* Add Zoom Animation */
+.animate{
+    -webkit-animation:  animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+#reg_text {
+    text-align: center
+}
+#anmelden {
+    width: auto
+}
+#head_anmel {
+    text-align: center
+}

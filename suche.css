@@ -1,0 +1,687 @@
+body {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 0% 100% 0%;
+}
+
+#ergebnis {
+    margin-top: 20px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#ergebnis > #tabelle {
+    table-layout: auto;
+    width: 100%;
+}
+
+#suchleiste {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#suchanfrage {
+    width: 75%;
+}
+
+#logo{
+    grid-column: 3;
+    grid-row: 1/1;
+}
+
+#logo > a > img {
+    width: 30%; float: right; margin-top: 3%;
+}
+
+table {
+    border: 1px solid black;
+}
+body {
+    color: black;
+}
+#smalltext {
+    white-space: pre-wrap;
+}
+:root {
+    --star-size: 20px;
+    --star-color: #fff;
+    --star-background: #000;
+}
+.stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+}
+.stars::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#star {
+    float: right;
+}
+input[type=text], input[type=password], input[type=email] {
+    width: 70%;
+    padding: 7px 21px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: white;
+    color: black;
+    padding: 7px 20px;
+    margin: 8px 0;
+    border: solid black 1px;
+    cursor: pointer;
+    width: 40%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+
+.popup-container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.loginpopup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    min-width: 100%; /* Full width */
+    min-height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.loginpopup2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: scroll;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    height: 50%;
+}
+.popup-content2 {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 11%; /* Could be more or less, depending on screen size */
+    height: 15%;
+}
+
+#loginlabel{
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: larger;
+}
+/* Add Zoom Animation */
+.animation {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+.register-popup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 140%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 30px;
+}
+.register-form{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 60%;
+}
+.register_error{
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    font-size: large;
+}
+.register_erfolg{
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    font-size: large;
+}
+.rolle-con{
+    text-align: center;
+}
+
+#falschesLogin{
+    color: red;
+    font-size: small;
+    line-height: normal;
+}
+
+#richtigesLogin{
+    color: green;
+    font-size: small;
+    line-height: normal;
+}
+
+#neuesKontoLink{
+    font-size: small;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* Add Zoom Animation */
+.animate{
+    -webkit-animation:  animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+#anmelden_button {
+    width: auto;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+#anmelden {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#überschrift1 {
+    text-align: center;
+}
+#überschrift2 {
+    text-align: center
+}
+#logo{
+    width: 10%;
+    float: right;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+#benutzerbild{
+    width:5%;
+}
+#jaja{
+    border: 1px solid black;
+    width: 70%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+}
+
+#filter {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 33% 33% 33%;
+}
+
+#produkt {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#art {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.my-js-slider {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#herkunft {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#inhaltsstoffe {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#bewertung {
+    border: 120px;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.suchleiste{
+    width: 100%;
+    text-align:center;
+}
+#suchetext{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+    width: 70%;
+    padding: 7px 21px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: white;
+    color: black;
+    padding: 7px 20px;
+    margin: 8px 0;
+    border: solid black 1px;
+    cursor: pointer;
+    width: 40%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+
+.popup-container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.loginpopup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    min-width: 100%; /* Full width */
+    min-height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.loginpopup2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: scroll;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    height: 50%;
+}
+.popup-content2 {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 11%; /* Could be more or less, depending on screen size */
+    height: 15%;
+}
+
+#loginlabel{
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: larger;
+}
+/* Add Zoom Animation */
+.animation {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+.register-popup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 140%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 30px;
+}
+.register-form{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 60%;
+}
+.register_error{
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    font-size: large;
+}
+.register_erfolg{
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    font-size: large;
+}
+.rolle-con{
+    text-align: center;
+}
+
+#falschesLogin{
+    color: red;
+    font-size: small;
+    line-height: normal;
+}
+
+#richtigesLogin{
+    color: green;
+    font-size: small;
+    line-height: normal;
+}
+
+#neuesKontoLink{
+    font-size: small;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* Add Zoom Animation */
+.animate{
+    -webkit-animation:  animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+#anmelden_button {
+    width: auto;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+#anmelden {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#überschrift1 {
+    text-align: center;
+}
+#überschrift2 {
+    text-align: center
+}
+#starttext {
+    text-align: center;
+}
+
+:root {
+    --star-size: 20px;
+    --star-color: #fff;
+    --star-background: #000;
+}
+.stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+}
+.stars::before {
+    content: '★★★★★';
+    letter-spacing: 7px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#star {
+}
+#empfehlungen {
+    text-align: center;
+}
+
+#jaja{
+    border: 1px solid black;
+    width: 70%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+}
+
+#logo{
+    width: 10%;
+    float: right;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+
+#benutzerbild{
+    width:5%;
+}
+#empfehlungen > #tabelle {
+    table-layout: auto;
+    width: 100%;
+    border: solid black 1px;
+}
+tr.border_bottom td {
+    border-bottom: 1px solid black;
+}
+
+#meinkonto{
+    font-size: larger;
+    text-decoration: none;
+}
+#abmelden{
+    font-size: larger;
+    text-decoration: none;
+}
+.loggedin{
+    display: grid;
+    grid-template-columns: auto;
+}
+.loggedin1{
+    padding: 16px;
+    border-bottom: solid black 1px;
+}
+
+
+@media only screen and (max-width:1080px) {
+    #überschrift2 {
+        font-size: 50px;
+    }
+    #tabelle{
+        font-size: 40px;
+    }
+    #benutzerbild{
+        min-height: 130px;
+        min-width: 130px;
+    }
+    #logo{
+        min-height: 50px;
+        min-width: 300px;
+        padding-top: 30px;
+    }
+    #suchetext{
+        font-size: 30px;
+    }
+    .loginpopup {
+        padding-top: 300px;
+        min-height: 85%;
+    }
+    .popup-content {
+        width: 80%; /* Could be more or less, depending on screen size */
+
+    }
+    #loginlabel{
+        font-size: 50px;
+    }
+    #registerlabel{
+        font-size: 20px;
+    }
+
+    input[type=text], input[type=password], input[type=email] {
+        width: 60%;
+    }
+    #neuesKontoLink{
+        font-size: 30px;
+    }
+    #email, #password{
+        width: 300px;
+    }
+    #falschesLogin{
+        font-size: 25px;
+    }
+    #richtigesLogin{
+        font-size: 25px;
+    }
+    #anmelden1{
+        font-size: 30px;
+        border: solid black 1px;
+    }
+    input, select, textarea {
+        font-size: 30px;
+    }
+    .popup-content2 {
+        width: 45%; /* Could be more or less, depending on screen size */
+        height: 10%;
+    }
+    .loggedin1{
+        font-size: 40px;
+    }
+
+
+    .register-popup{
+        min-width: 100%;
+        min-height: 140%;
+        padding-top: 30px;
+    }
+    .register-form{
+        margin: 5% auto 15% auto;
+        min-width: 60%;
+    }
+    .register_error{
+
+    }
+    .register_erfolg{
+
+    }
+    #registerInput{
+
+    }
+    input#registerInput[type="email"]{
+        padding: 20px 10px;
+    }
+
+
+    #starttext{
+        font-size: 60px;
+    }
+    #suchbutton{
+        width: 240px;
+        height: 60px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #filterbutton{
+        width: 240px;
+        height: 60px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #suchanfrage{
+        width: 450px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        border: solid black 1px;
+    }
+    #suchleiste{
+        margin-top: 120px;
+    }
+    :root{
+        --star-size: 40px;
+    }
+    #herkunft{
+        font-size: 40px;
+    }
+    #inhaltsstoffe{
+        font-size: 40px;
+    }
+    #alkoholgehalt{
+        font-size: 40px;
+    }
+    #allergen{
+        font-size: 40px;
+    }
+    #bewertung{
+        font-size: 40px;
+    }
+    #produkt{
+        margin-top: 100px;
+        font-size: 30px;
+    }
+    #produkte{
+        font-size: 30px;
+    }
+    #artBier{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    #artWein{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    #ergebnis{
+        margin-top: 170px;
+    }
+}
